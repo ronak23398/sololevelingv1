@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:solo_leveling_v1/app/controllers/auth_controllers.dart';
+import 'package:solo_leveling_v1/app/controllers/task_controller.dart';
 import 'package:solo_leveling_v1/app/controllers/xp_controller.dart';
 import 'package:solo_leveling_v1/app/routes/app_pages.dart';
 import 'package:solo_leveling_v1/app/widgets/app_progress_bar.dart';
@@ -8,6 +9,7 @@ import 'package:solo_leveling_v1/app/widgets/app_progress_bar.dart';
 class HomeScreen extends StatelessWidget {
   final AuthController _authController = Get.find<AuthController>();
   final XPController _xpController = Get.find<XPController>();
+  final TaskController taskController = Get.find<TaskController>();
 
   @override
   Widget build(BuildContext context) {
